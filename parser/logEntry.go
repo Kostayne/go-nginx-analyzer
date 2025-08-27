@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/kostayne/go-nginx-analyzer/worditer"
+	"github.com/Kostayne/go-nginx-analyzer/worditer"
 )
 
 type LogEntry struct {

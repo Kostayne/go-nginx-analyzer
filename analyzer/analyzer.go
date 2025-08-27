@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Kostayne/go-nginx-analyzer/parser"
 	"github.com/edsrzf/mmap-go"
-	"github.com/kostayne/go-nginx-analyzer/parser"
 )
 
 // Chunk size in bytes

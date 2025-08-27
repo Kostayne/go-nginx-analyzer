@@ -1,4 +1,4 @@
-module github.com/kostayne/go-nginx-analyzer
+module github.com/Kostayne/go-nginx-analyzer
 
 go 1.24.5
 

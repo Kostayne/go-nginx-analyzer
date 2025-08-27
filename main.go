@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/kostayne/go-nginx-analyzer/cmd"
-	"github.com/kostayne/go-nginx-analyzer/generator"
+	"github.com/Kostayne/go-nginx-analyzer/cmd"
+	"github.com/Kostayne/go-nginx-analyzer/generator"
 )
 
 func main() {

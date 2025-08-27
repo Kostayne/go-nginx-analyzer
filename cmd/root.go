@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kostayne/go-nginx-analyzer/analyzer"
+	"github.com/Kostayne/go-nginx-analyzer/analyzer"
 	"github.com/spf13/cobra"
 )
 
