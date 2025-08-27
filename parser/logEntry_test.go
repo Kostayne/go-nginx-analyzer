@@ -15,13 +15,13 @@ func TestParseLogEntry(t *testing.T) {
 
 		assert.NoError(t, err)
 		assert.NotNil(t, log)
-		assert.Equal(t, "192.168.1.100", log.Ip)
+		assert.Equal(t, "192.168.1.100", log.Ip.String())
 		assert.Equal(t, "-", log.User)
 		assert.Equal(t, `"GET`, log.Method) // Quotes remain in method field
 		assert.Equal(t, "/api/users", log.Uri)
 		assert.Equal(t, `HTTP/1.1"`, log.Protocol) // Quotes remain in protocol field
-		assert.Equal(t, 200, log.StatusCode)
-		assert.Equal(t, 1234, log.RespBytes)
+		assert.Equal(t, uint16(200), log.StatusCode)
+		assert.Equal(t, uint(1234), log.RespBytes)
 		assert.Equal(t, `"https://example.com"`, log.Referrer) // Quotes remain in referrer
 		assert.Equal(t, `"Mozilla/5.0"`, log.UserAgent)        // Quotes remain in user agent
 
